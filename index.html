@@ -1353,7 +1353,7 @@ function startQuiz(unit, emoji) {
   currentUnit = unit;
   currentEmoji = emoji;
   const data = quizData[unit] || quizData['be動詞'];
-  questions = [...data].sort(() => Math.random() - 0.5).slice(0, Math.min(data.length, 10));
+  questions = [...data].sort(() => Math.random() - 0.5).slice(0, Math.min(data.length, 5));
   currentQ = 0;
   correctCount = 0;
   loadQuestion();
