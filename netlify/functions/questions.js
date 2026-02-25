@@ -2,7 +2,7 @@
 // Notion APIのAPIキーをサーバー側で保持し、ブラウザに漏れないようにする中継関数
 
 const NOTION_API_KEY = process.env.NOTION_API_KEY;
-const DATABASE_ID   = process.env.NOTION_DATABASE_ID; // bba8e5642b4d4e288ba884e46aa49150
+const DATABASE_ID   = process.env.NOTION_DATABASE_ID;
 
 exports.handler = async () => {
   if (!NOTION_API_KEY || !DATABASE_ID) {
